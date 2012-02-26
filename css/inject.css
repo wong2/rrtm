@@ -1,0 +1,41 @@
+#tm_wrapper{
+    margin-left: 45px;
+}
+
+#tm_text{
+    width: 350px; 
+    height: 23px; 
+    font-size: 15px;
+}
+
+#tm_button{
+    height: 30px; 
+    width: 63px;
+}
+
+.tm_cb{
+    margin-left: 10px;
+}
+
+.tm_hide_comments{
+    display: none;
+}
+
+.tm_color_picker{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    bottom: 0;
+}
+.tm_picker{
+    border: solid thin black;
+    width: 30px;
+    margin-top: 2px;
+    height: 27px;        
+    cursor: pointer;
+}
+.tm_indicator{
+    position: absolute;
+    top: 342px;
+    left: 20px;
+}

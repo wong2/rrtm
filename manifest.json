@@ -1,0 +1,23 @@
+{
+    "name": "人人弹幕",
+    "version": "1.0.1",
+    "description": "给人人网上的视频分享增加弹幕功能",
+    "background_page": "background.html",
+    "icons": {
+        "48": "images/tan.png"
+    },
+    "content_scripts": [{
+        "matches": ["http://share.renren.com/*"],
+        "css": ["css/inject.css"],
+        "js": [
+            "scripts/stop.js", "scripts/jquery.min.js", "scripts/jquery.pause.min.js", 
+            "scripts/md5.min.js", "scripts/player.js", "scripts/comment.js", "scripts/editor.js", 
+            "scripts/utils.js", "scripts/main.js", "scripts/bootstrap.js"
+        ],
+        "run_at": "document_start"
+    }],
+    "permissions": [
+        "http://*.renren.com/",
+        "http://rrtm.sinaapp.com/"
+    ]
+}
